@@ -1,5 +1,5 @@
 ---
-title: "8/07 코테 스터디"
+title: 8/07 코테 스터디
 author: Jeremiah Lee
 date: 2023-08-07
 categories: [ 코딩테스트, 스터디 ]
