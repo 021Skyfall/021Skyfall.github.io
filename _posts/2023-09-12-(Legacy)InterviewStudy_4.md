@@ -2,15 +2,15 @@
 title: "9/12 면접 준비"
 author: Jeremiah Lee
 date: 2023-09-12
-categories: [ 면접 준비, 스터디 ]
+categories: [ 스터디, 면접 스터디 ]
 tags: [취준 스터디]
 pin: true
 math: true
 mermaid: true
-image: /assets/img/StudyGroupLog/interview_jelly.png
-path: /commons/devices-mockup.png
-lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-alt: Something
+image: 
+  path: /assets/img/StudyGroupLog/interview_jelly.png
+  lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
+  alt: 
 ---
 ***
 
