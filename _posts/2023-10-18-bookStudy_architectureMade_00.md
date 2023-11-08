@@ -1,10 +1,16 @@
 ---
 title: "만들면서 배우는 클린 아키텍처 기록 잠정 중단"
+author: Jeremiah Lee
 date: 2023-10-18
-author_profile: Jeremiah Lee
-#metadate:
-categories: [ 만들면서 배우는 클린 아키텍처, 책, 공지 ]
-image: "/assets/images/book_study/clean_architecture_for_make.png"
+categories: [ 만들면서 배우는 클린 아키텍처, 공지 ]
+tags: [책]
+pin: true
+math: true
+mermaid: true
+image: "/assets/img/book_study/clean_architecture_for_make.png"
+#path: /commons/devices-mockup.png
+#lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
+#alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 ***
 

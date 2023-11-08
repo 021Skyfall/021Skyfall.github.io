@@ -1,15 +1,21 @@
 ---
 title: "정보처리기사 / 22.04 필기 모의고사 오답노트"
+author: Jeremiah Lee
 date: 2023-11-07
-author_profile: Jeremiah Lee
-#metadate:
-categories: [ 정보처리기사, 오답노트, 자격증 ]
-image:
-  path:/assets/images/Certificates/EIP/Certificate_jelly.png
+categories: [ 정보처리기사, 오답노트 ]
+tags: [자격증, 필기]
+pin: true
+math: true
+mermaid: true
+image: "/assets/img/Certificates/EIP/Certificate_jelly.png
+#path: /commons/devices-mockup.png
+#lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
+#alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 ***
+
 ## 2022년 4월 기출문제
-![](/assets/images/Certificates/EIP/EIP_WE-MockTest_22-04_result.png)
+![](/assets/img/Certificates/EIP/EIP_WE-MockTest_22-04_result.png)
 
 <br>
 
@@ -212,7 +218,7 @@ image:
 <br>
 
 #### 33. 다음은 인스펙션(Inspection) 과정을 표현한 것이다. (가)~(마)에 들어갈 말을 보기에서 찾아 바르게 연결한 것은?
-![](/assets/images/Certificates/EIP/22-04-33.png)
+![](/assets/img/Certificates/EIP/22-04-33.png)
 
     1. (가) - ㉡, (나) - ㉢
     2. (나) - ㉠, (다) - ㉢
@@ -233,7 +239,7 @@ image:
 <br>
 
 #### 37. 아래 Tree 구조에 대하여 후위 순회(Postorder) 한 결과는?
-![](/assets/images/Certificates/EIP/22-04-37.png)
+![](/assets/img/Certificates/EIP/22-04-37.png)
 
     1. a → b → d → c → e → g → h → f
     2. d → b → g → h → e → f → c → a
@@ -276,7 +282,7 @@ image:
 <br>
 
 #### 41. 다음 조건을 모두 만족하는 정규형은?
-![](/assets/images/Certificates/EIP/22-04-41.png)
+![](/assets/img/Certificates/EIP/22-04-41.png)
 
     1. BCNF
     2. 제1정규형

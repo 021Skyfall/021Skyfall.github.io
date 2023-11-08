@@ -1,20 +1,26 @@
 ---
 title: "8/07 코테 스터디"
+author: Jeremiah Lee
 date: 2023-08-07
-author_profile: Jeremiah Lee
-#metadate:
 categories: [ 코딩테스트, 스터디 ]
-image: "/assets/images/StudyGroupLog/CodingTestStudyLog_jelly.png"
+tags: [취준 스터디]
+pin: true
+math: true
+mermaid: true
+image: "/assets/img/StudyGroupLog/CodingTestStudyLog_jelly.png"
+#path: /commons/devices-mockup.png
+#lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
+#alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 ***
 
 가장 먼저 시작하자마자 이전에 설정한 각자 학습 진도부터 체크했다.
 
-![](/assets/images/StudyGroupLog/8-07-codingTestStudyPic1.png)
+![](/assets/img/StudyGroupLog/8-07-codingTestStudyPic1.png)
 
 이후 서로 다시 된 것부터 다음 목표까지 체크해놓았다.
 
-![](/assets/images/StudyGroupLog/8-07-codingTestStudyPic2.png)
+![](/assets/img/StudyGroupLog/8-07-codingTestStudyPic2.png)
 
 
 오늘은 코딩 테스트 2 문제 풀이가 주요 목표였기 때문에
@@ -31,4 +37,4 @@ image: "/assets/images/StudyGroupLog/CodingTestStudyLog_jelly.png"
 다음으로는 아래와 같은 문제를 풀어오기로 했다.
 
 
-![](/assets/images/StudyGroupLog/8-07-codingTestStudyPic3.png)
+![](/assets/img/StudyGroupLog/8-07-codingTestStudyPic3.png)

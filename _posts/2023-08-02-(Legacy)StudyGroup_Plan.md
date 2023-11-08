@@ -1,10 +1,16 @@
 ---
-title: "8/01 취업 준비 스터디 계획"
-date: 2023-08-01
-author_profile: Jeremiah Lee
-#metadate:
+title: "8/02 취업 준비 스터디 계획"
+author: Jeremiah Lee
+date: 2023-08-02
 categories: [ 스터디, 공지 ]
-image: "/assets/images/StudyGroupLog/StudySection_jelly.png"
+tags: [취준 스터디]
+pin: true
+math: true
+mermaid: true
+image: "/assets/img/StudyGroupLog/StudySection_jelly.png"
+#path: /commons/devices-mockup.png
+#lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
+#alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 ***
 
@@ -26,7 +32,7 @@ image: "/assets/images/StudyGroupLog/StudySection_jelly.png"
 
 아래는 작성한 공지이다.
 
-![](/assets/images/StudyGroupLog/08-02_studylog1.png)
+![](/assets/img/StudyGroupLog/08-02_studylog1.png)
 아쉬운 점은 인원이 적다는 것이다.
 
 학원에서 만나 소통이 원활한 인원을 모았는데, 그 결과 3~4명 뿐 되지 않기 때문에 그 점이 많이 아쉽다.
@@ -48,5 +54,5 @@ image: "/assets/images/StudyGroupLog/StudySection_jelly.png"
 
 아래는 정해진 계획대로 다음주 까지 진행할 내용이다.
 
-![](/assets/images/StudyGroupLog/08-02_studylog2.png)
+![](/assets/img/StudyGroupLog/08-02_studylog2.png)
 면접 준비 같은 경우는 뉴비를 위한 면접 레퍼런스가 깃헙에 있기 때문에 해당 내용을 정독하고 어느정도 숙지해와서 모의 면접을 진행해 보기로 했다.

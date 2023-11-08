@@ -1,10 +1,16 @@
 ---
 title: "9/25 코테 스터디"
+author: Jeremiah Lee
 date: 2023-09-25
-author_profile: Jeremiah Lee
-#metadate:
 categories: [ 코딩테스트, 스터디 ]
-image: "/assets/images/StudyGroupLog/CodingTestStudyLog_jelly.png"
+tags: [취준 스터디]
+pin: true
+math: true
+mermaid: true
+image: "/assets/img/StudyGroupLog/CodingTestStudyLog_jelly.png"
+#path: /commons/devices-mockup.png
+#lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
+#alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 ***
 
