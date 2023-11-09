@@ -61,14 +61,14 @@
 
     {% for entry in site.data.contact %}
       {% case entry.type %}
-        {% when 'github', 'twitter' %}
+        {% when 'github' %}
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
           {%- endcapture -%}
         {% when 'email' %}
           {% assign email = site.social.email | split: '@' %}
           {%- capture url -%}
-            javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
+            javascript:copyToClipboard('{{ site.social.email }}')
           {%- endcapture -%}
         {% when 'rss' %}
           {% assign url = '/feed.xml' | relative_url %}
@@ -103,3 +103,17 @@
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
+
+<script>
+  function copyToClipboard(text) {
+    var tempInput = document.createElement("input");
+    tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    alert("이메일 주소가 클립보드에 복사되었습니다. \n구글 이메일로 이동합니다.");
+    window.open("https://mail.google.com", "_blank");
+  }
+</script>
