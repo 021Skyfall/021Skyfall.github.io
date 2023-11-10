@@ -4,7 +4,7 @@ author: Jeremiah Lee
 date: 2023-09-13
 categories: [ 책, 그림으로 배우는 네트워크 원리 ]
 tags: [책]
-pin: true
+pin: false
 math: true
 mermaid: true
 image: 

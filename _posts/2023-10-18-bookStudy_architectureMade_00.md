@@ -4,7 +4,7 @@ author: Jeremiah Lee
 date: 2023-10-18
 categories: [ 책, 만들면서 배우는 클린 아키텍처 ]
 tags: [책]
-pin: true
+pin: false
 math: true
 mermaid: true
 image: 

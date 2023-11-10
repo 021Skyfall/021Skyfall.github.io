@@ -4,7 +4,7 @@ author: Jeremiah Lee
 date: 2023-10-21
 categories: [ 취업, 코딩 테스트 ]
 tags: [ 취업, 알고리즘, 후기]
-pin: true
+pin: false
 math: true
 mermaid: true
 image: 

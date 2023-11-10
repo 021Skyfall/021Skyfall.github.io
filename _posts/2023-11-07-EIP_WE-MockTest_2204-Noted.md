@@ -4,7 +4,7 @@ author: Jeremiah Lee
 date: 2023-11-07
 categories: [ 정보처리기사, 필기 오답노트 ]
 tags: [자격증]
-pin: true
+pin: false
 math: true
 mermaid: true
 image: 

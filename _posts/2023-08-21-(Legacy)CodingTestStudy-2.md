@@ -4,7 +4,7 @@ author: Jeremiah Lee
 date: 2023-08-21
 categories: [ 스터디, 코테 스터디 ]
 tags: [취준 스터디]
-pin: true
+pin: false
 math: true
 mermaid: true
 image: 
