@@ -1,7 +1,7 @@
 ---
 title: "프로젝트:샐로그 / 배포 (Github Actions/Docker/AWS)"
 author: Jeremiah Lee
-date: 2023-11-28
+date: 2023-12-01
 categories: [ 프로젝트, 샐로그 ]
 tags: [프로젝트, 샐로그, 배포, Github Actions, 도커, AWS]
 pin: false
