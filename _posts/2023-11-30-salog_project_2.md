@@ -30,11 +30,11 @@ image:
 
 ### **사용자 요구사항 정의서**
 
-![](/assets/img/project_pdfs/salog/salog-userrequirment_sheet1.png)
+![](/assets/img/projects/salog/salog-userrequirment_sheet1.png)
 
-![](/assets/img/project_pdfs/salog/salog-userrequirment_sheet2.png)
+![](/assets/img/projects/salog/salog-userrequirment_sheet2.png)
 
-**pdf** : [사용자 요구사항 정의서](/assets/img/project_pdfs/salog/salog-userrequirment_sheet.pdf)
+**pdf** : [사용자 요구사항 정의서](/assets/img/projects/salog/salog-userrequirment_sheet.pdf)
 
 사용자 요구사항 정의서이다.
 
@@ -59,11 +59,11 @@ wrieating 진행 당시에는 이 요구사항 정의서를 너무 간단하게 
 
 ### **API 명세서**
 
-![](/assets/img/project_pdfs/salog/salog-API_sheet1.png)
+![](/assets/img/projects/salog/salog-API_sheet1.png)
 
-![](/assets/img/project_pdfs/salog/salog-API_sheet2.png)
+![](/assets/img/projects/salog/salog-API_sheet2.png)
 
-**pdf** : [API 명세서](/assets/img/project_pdfs/salog/salog-API_sheet.pdf)
+**pdf** : [API 명세서](/assets/img/projects/salog/salog-API_sheet.pdf)
 
 API 명세서인데, 이 명세서는 수시로 변경될 것이고 결국에는 개발 도중, 이후 문서화를 할 것이기 때문에 완성본은 아니다.
 
@@ -81,11 +81,11 @@ API 명세서인데, 이 명세서는 수시로 변경될 것이고 결국에는
 
 ### **테이블 명세서**
 
-![](/assets/img/project_pdfs/salog/salog-table_sheet1.png)
+![](/assets/img/projects/salog/salog-table_sheet1.png)
 
-![](/assets/img/project_pdfs/salog/salog-table_sheet2.png)
+![](/assets/img/projects/salog/salog-table_sheet2.png)
 
-**pdf** : [테이블 명세서](/assets/img/project_pdfs/salog/salog-table_sheet.pdf)
+**pdf** : [테이블 명세서](/assets/img/projects/salog/salog-table_sheet.pdf)
 
 가장 중요한 테이블 명세서이다.
 
@@ -109,9 +109,9 @@ API 명세서인데, 이 명세서는 수시로 변경될 것이고 결국에는
 
 ### **코드 컨벤션**
 
-![](/assets/img/project_pdfs/salog/salog-codeconvention_sheet.png)
+![](/assets/img/projects/salog/salog-codeconvention_sheet.png)
 
-**pdf** : [코드 컨벤션](/assets/img/project_pdfs/salog/salog-codeconvention_sheet.pdf)
+**pdf** : [코드 컨벤션](/assets/img/projects/salog/salog-codeconvention_sheet.pdf)
 
 나는 개발 시 가독성을 굉장히 중요하게 생각하는데, 이 코드 컨벤션 문서를 작성해 해당 부분을 굉장히 많이 개선할 수 있을 것이라 생각한다.
 
@@ -124,6 +124,22 @@ API 명세서인데, 이 명세서는 수시로 변경될 것이고 결국에는
 복잡하지 않은 만큼 실수가 적을 것이다.
 
 또한 커밋과 pr시 어떻게 작성해야하는지 적어놓았기 때문에 일관성이 있어 가독성이 높아질 것이다.
+
+<br>
+<br>
+<br>
+
+### **깃헙 칸반**
+
+칸반은 [링크](https://github.com/users/kimtjrgus/projects/7/views/1?layout=board)로 대체한다.
+
+이 당시 백엔드 이슈는 내가 다 작성했는데, 이렇게 하는 것이 아니라 무언가를 진행함과 동시에 칸반을 작성해야하는 것 같다.
+
+미리 작성했기 때문에 커밋이 무려 40개 이상이 쌓여버렸다.
+
+이미 만들어진 것을 지우고 다시하기도 뭐해서 그냥 냅뒀는데, 다음부터는 어떤 작업을 시작할 때 해당 작업만 올려놓고 진행하자.
+
+또한, 해당 작업을 세세하게 커밋 단위로 생각해서 넣어주어야 할 것이다.
 
 <br>
 <br>
