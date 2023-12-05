@@ -1,9 +1,9 @@
 ---
-title: "프로젝트:샐로그 / 배포 2 (Github Actions/Docker/AWS)"
+title: "프로젝트:샐로그 / 배포 2 (AWS/Domain)"
 author: Jeremiah Lee
 date: 2023-12-04
-categories: [ 프로젝트, 샐로그, 도커 ]
-tags: [프로젝트, 샐로그, 배포, Github Actions, 도커, AWS]
+categories: [ 프로젝트, 샐로그 ]
+tags: [프로젝트, 샐로그, 배포, AWS, Domain]
 pin: false
 math: true
 mermaid: true
