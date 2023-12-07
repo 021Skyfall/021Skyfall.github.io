@@ -118,17 +118,36 @@ JS (Java Script) == 상호작용
 ```
 
 폰트   
-<font-family> : 다수 폰트 적용 // 지원 안되는 폰트는 fallback라고 함   
-글꼴 크기 단위   
-절대 단위 : px, pt 등 // 환경 영향 받지 않는 절대적인 크기   
-상대 단위 : %, em, rem, ch, vw, vh 등 // 대표적으로 rem 사용   
+- 다수 폰트 적용 // 지원 안되는 폰트는 fallback라고 함
+
+```
+<font-family>
+```
+
+- 글꼴 크기 단위   
+- 절대 단위 : px, pt 등 // 환경 영향 받지 않는 절대적인 크기   
+- 상대 단위 : %, em, rem, ch, vw, vh 등 // 대표적으로 rem 사용   
 
 정렬   
-<text-align> : 가로 정렬 // 유효 명령어 : left / right / center / justify(양쪽)
+
+```
+<text-align>
+```
+
+가로 정렬 // 유효 명령어 : left / right / center / justify(양쪽)
 
 간격   
-행간 : <line-height>   
-자간 : <letter-weight>   
+행간 
+
+```
+<line-height>
+```
+
+자간
+
+```
+<letter-weight>
+```
 
 줄바꿈   
 Block : 자동 줄바꿈 O 
@@ -159,9 +178,9 @@ Inline : 자동 줄바꿈 X, 박스가 늘어남
 - 10px(전방향)   
 - 박스 바깥으로 컨텐츠가 빠져나가지 않게 하고 너무 길면 스크롤이 자동으로 생성되는 명령어 == overflow: auto;   
 
-<br/>
-<br/>
-<br/>
+<br>
+<br>
+<br>
 
 ***
 
