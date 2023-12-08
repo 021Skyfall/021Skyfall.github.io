@@ -184,4 +184,4 @@ Inline : 자동 줄바꿈 X, 박스가 늘어남
 
 ***
 
-[이전 블로그](https://blog.naver.com/021skyfall/222957714222)에서 옮긴 글
+[이전 블로그](https://blog.naver.com/021skyfall/222957714222)에서 옮겨짐
