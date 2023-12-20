@@ -184,3 +184,153 @@ public class MemberController {
 <br>
 
 ### ***2.토큰 재발급***
+
+다음은 토큰 재발급 로직이다.
+
+기존에 참고했던 프로젝트에서는 이 리프레쉬 토큰을 바탕으로 액세스 토큰을 재발급해주는 로직이 없었기 때문에 구현하게 되었다.
+
+이 로직이 없다면 사실 리프레쉬 토큰 발급은 의미가 없다.
+
+리프레쉬 토큰은 액세스 토큰을 발급 받을 때 동시에 발급되게 끔 작성해놓았었고, 이를 활용할 차례이다.
+
+우선 리프레쉬 토큰을 받아와 새로운 액세스 토큰을 발급 받는 과정을 먼저 설명한다.
+
+```java
+    public Map<String, String> tokenReissue(String refreshToken) {
+    // 리프레쉬 토큰 검증
+    Claims claims;
+    try {
+        claims = this.getClaims(refreshToken, this.encodeBase64SecretKey(this.secretKey)).getBody();
+    } catch (ExpiredJwtException e) {
+        throw new BusinessLogicException(ExceptionCode.TOKEN_EXPIRED);
+    } catch (JwtException e) {
+        throw new BusinessLogicException(ExceptionCode.TOKEN_INVALID);
+    }
+
+    // 사용자 정보 조회
+    String email = claims.getSubject();
+    Optional<Member> member = memberRepository.findByEmail(email);
+
+    // 조회된 사용자 정보를 바탕으로 클레임 생성
+    Map<String, Object> newClaims = new HashMap<>();
+    newClaims.put("roles", member.get().getRoles());
+    newClaims.put("memberId", member.get().getMemberId());
+    newClaims.put("username", member.get().getEmail());
+
+    // 새로운 액세스 토큰 발급
+    Date expiration = this.getTokenExpiration(this.accessTokenExpirationMinutes);
+    String newAccessToken = this.generateAccessToken(newClaims, email, expiration, this.encodeBase64SecretKey(this.secretKey));
+
+    // 새로운 리프레쉬 토큰 발급
+    expiration = this.getTokenExpiration(this.refreshTokenExpirationMinutes);
+    String newRefreshToken = this.generateRefreshToken(email, expiration, this.encodeBase64SecretKey(this.secretKey));
+
+    Map<String, String> tokens = new HashMap<>();
+    tokens.put("accessToken", "Bearer " + newAccessToken);
+    tokens.put("refreshToken", newRefreshToken);
+
+    return tokens;
+}
+```
+
+이 메서드는 JwtTokenizer 클래스에 위치해 있는데, 이는 JWT 토큰과 관련된 로직을 처리하는 클래스이기 때문에 재발급 로직 역시 이 클래스에서
+처리하는 게 맞다고 보았기 때문이다.
+
+다시 말해, JWT 토큰 관련 책임은 JwtTokenizer 클래스가 지고 있다고 보는게 맞다.
+
+위의 재발급 로직을 살펴보면, 우선은 리프레쉬 토큰을 매개 변수로 입력 받아, 이 리프레쉬 토큰에서 클레임을 추출한다. 
+
+이 추출 과정 중에 토큰이 만료되었거나, 유효하지 않은 토큰이라면 각 커스텀 에러코드를 리턴한다.
+
+그 다음으로 이 클레임에 담겨있는 사용자 이메일을 추출해 회원 DB에서 해당 회원을 조회한다.
+
+조회한 다음 액세스 토큰을 재발급하기 위해 필요한 정보를 뽑아 새로운 클레임을 생성한다.
+
+그 다음 액세스 토큰의 생존 기간을 다시 설정하고 액세스 토큰을 발급한다.
+
+마찬가지로 리프레쉬 토큰도 재발급한다.
+
+<br>
+
+여기서 주의해야할 점은 리프레쉬 토큰의 클레임 정보와 액세스 토큰의 클레임 정보는 다르다는 점이다.
+
+애초부터 생성할 때 리프레쉬 토큰에는 간단한 정보만을 담고 있게 만들었다.
+
+만약 헷갈린다면, [jwt 디코더](https://jwt.io/)에서 토큰을 넣고 확인하는 방법을 사용하자.
+
+이 정보를 제대로 확인하지 않고서는 유효한 액세스 토큰을 발급할 수 없다.
+
+<br>
+
+우선 내가 생성한 액세스 토큰과 리프레쉬 토큰의 클레임은 아래와 같이 다르다.
+
+1. 액세스 토큰
+![](/assets/img/projects/salog/jwtProblem-decoder1.png)
+
+2. 리프레쉬 토큰
+![](/assets/img/projects/salog/jwtProblem-decoder2.png)
+
+<br>
+
+처음에는 내가 만들어놓고도 헷갈려서 디코더를 사용했고 이 디코딩 된 클레임을 바탕으로 액세스 토큰을 재발급했다.
+
+<br>
+
+이 다음에는 클라이언트와 통신하여 토큰을 재발급 해줄 수 있어야한다.
+
+API가 필요하다.
+
+```java
+@RestController
+@AllArgsConstructor
+public class TokenController {
+    private final JwtTokenizer jwtTokenizer;
+    private final TokenBlackListService tokenBlackListService;
+
+    @PostMapping("/refresh")
+    public ResponseEntity<?> refresh(@RequestBody Map<String, String> payload) {
+        String oldRefreshToken = payload.get("refreshToken");
+
+        tokenBlackListService.isBlackListed(oldRefreshToken);
+
+        // 기존 Refresh 토큰의 유효성을 검사하고, 새로운 Access 토큰과 refresh 토큰을 생성
+        Map<String, String> tokens = jwtTokenizer.tokenReissue(oldRefreshToken);
+
+        // 기존 Refresh 토큰을 블랙리스트에 추가
+        tokenBlackListService.addToBlackList(oldRefreshToken);
+
+        return ResponseEntity.ok(tokens);
+    }
+}
+```
+
+그렇기 때문에 auth 패키지에 controller를 두었다.
+
+이 컨트롤러를 활용해 통신하고, 토큰 재발급 메서드는 바디에 맥세스 토큰과 리프레쉬 토큰을 받아온다.
+
+사실 리프레쉬만 받아도 되는데, 일단 나는 처음 발급해준 그대로 전부 복사하여 요청할 것이라 생각했기 때문에 둘 다 포함하는 로직으로 작성했다.
+
+이 바디에서 리프레쉬 토큰만 추출해 가장 먼저 이 리프레쉬 토큰이 블랙리스트에 포함되어 있는지 부터 확인한다.
+
+이미 이 리프레쉬 토큰으로 액세스 토큰이 발급되었다면 에러를 리턴할 것이고, 추후 로그아웃 시 리프레쉬 토큰도 블랙리스트에 등록하게 된다면 동일하게 에러를 리턴하게 될 것이다.
+
+다음으로 아까 작성한 JwtTokenizer의 토큰 재발급 메서드를 활용하여, 리프레쉬 토큰을 검증하고, 액세스 토큰과 리프레쉬 토큰을 재발급 받는다.
+
+이후 사용된 리프레쉬 토큰은 블랙리스트에 추가하고 해당 토큰들을 클라이언트에 리턴한다.
+
+<br>
+
+초기에는 액세스 토큰은 JwtTokenizer에서 생성하고, 리프레쉬 토큰은 TokenController에서 생성되는 등 좀 엉켜있었어서
+
+이 글을 작성하면서 리팩토링을 거쳤다.
+
+그래서 현재는 토큰 검증, 생성 로직은 전부 JwtTokenizer로 넘기고, TokenController에서는 블랙리스트 확인과 Tokenizer로 검증과 생성의 책임을 전부 넘겼다.
+
+또한, 이 블랙리스트 확인도 추후 로그아웃 시 리팩터링 된다면 이 컨트롤러는 통신에 대한 책임만 지게 될 것이다.
+
+<br>
+<br>
+<br>
+
+이로써 로그아웃과 토큰 재발급에 대한 로직이 끝났다.
+
