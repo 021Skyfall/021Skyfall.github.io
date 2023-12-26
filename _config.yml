@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Jerry's JellyBeans | blog # the main title
 
-tagline: Jerry the Newb dev # it will display as the sub-title
+tagline: Jerry the Newb dev<br/><br/><a href='https://blog.naver.com/021skyfall'>>>Go To previous blog<<</a> # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
