@@ -3,7 +3,7 @@ title: "프로젝트:샐로그 / 이슈 3 - 에러 응답"
 author: Jeremiah Lee
 date: 2023-12-26
 categories: [ 프로젝트, 샐로그, 문제해결 ]
-tags: [프로젝트, 샐로그, 문제해결 ]
+tags: [프로젝트, 샐로그, 문제해결, 비지니스 에러 ]
 pin: false
 math: true
 mermaid: true

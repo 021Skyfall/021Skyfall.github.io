@@ -3,7 +3,7 @@ title: "프로젝트:샐로그 / 이슈 4 - Pageable과 PageRequest"
 author: Jeremiah Lee
 date: 2024-01-02
 categories: [ 프로젝트, 샐로그, 문제해결 ]
-tags: [프로젝트, 샐로그, 문제해결 ]
+tags: [프로젝트, 샐로그, 문제해결, 페이징 ]
 pin: false
 math: true
 mermaid: true
