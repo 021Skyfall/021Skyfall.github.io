@@ -15,7 +15,6 @@ image:
 ***
 
 ## 2022년 4월 기출문제
-![](/assets/img/Certificates/EIP/EIP_WE-MockTest_22-04_result.png)
 
 <br>
 
