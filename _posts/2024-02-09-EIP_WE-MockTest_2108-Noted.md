@@ -401,7 +401,7 @@ image:
 
 <br>
 
-#### C Class에 속하는 IP address는?
+#### 75. C Class에 속하는 IP address는?
 
      1.	200.168.30.1
      2.	10.3.2.1
@@ -471,6 +471,23 @@ image:
 
 <br>
 
+#### 82.	정보 시스템 내에서 어떤 주체가 특정 개체에 접근하려 할 때 양쪽의 보안 레이블(Security Label)에 기초하여 높은 보안 수준을 요구하는 정보(객체)가 낮은 보안 수준의 주체에게 노출되지 않도록 하는 접근 제어 방법은?
+
+     1.	Mandatory Access Control
+     2.	User Access Control
+     3.	Discretionary Access Control
+     4.	Data-Label Access Control
+
+##### 정답 : 1
+- 강제 접근 통제 (Mandatory Access Control) 
+  - 주체와 객체의 등급을 비교하여 접근 권한을 부여하는 방식
+- 임의 접근 통제 (Discretionary Access Control)
+  - 접근하는 사용자의 신원에 따라 접근 권한을 부여하는 방식
+- 사용자 계정 컨트롤 (User Access Control)
+  - 프로그램에서 관리자 수준의 권한이 필요한 작업을 수행할 때 사용자에게 알려서 제어할 수 있도록 돕는 기능
+- 자료별 접근 통제 (Data-Label Access Control)
+  - 개별 행, 열에 대해 쓰기 권한, 읽기 권한을 가졌는지 명확하게 결정하는 제어 방식
+
 #### 83.	구글의 구글 브레인 팀이 제작하여 공개한 기계 학습(Machine Leaming)을 위한 오픈소스 소프트웨어 라이브러리는?
 
      1.	타조(Tajo)
@@ -504,6 +521,23 @@ image:
   - BaaS (Block-chain as a Service)
 
 <br>
+
+#### 87.	물리적 배치와 상관없이 논리적으로 LAN을구성하여 Broadcast Domain을 구분할 수있게 해주는 기술로 접속된 장비들의 성능향상 및 보안성 증대 효과가 있는 것은?
+
+     1.	VLAN
+     2.	STP
+     3.	L2AN
+     4.	ARP
+
+##### 정답 : 1
+- VLAN (Virtual Local Area Network)
+  - 물리적 배치와 상관없이 논리적으로 LAN을 구성함
+  - Broadcast Domain을 구분할 수 있게 해주는 기술로, 접속된 장비들의 성능 향상 및 보안성 증대 효과
+- STP (Spanning Tree Protocol)
+  - 2개 이상의 스위치가 여러 경로로 연결될 때, 무한 루프 현상을 막기 위해 우선 순위에 따라 1개의 경로로만 통신하도록 하는 프로토콜
+- ARP (Address Resolution Protocol)
+  - 네트워크 상에서 IP 주소를 물리적 네트워크 주소로 대응시키기 위해 사용되는 프로토콜
+  - IP 주소를 MAC 주소로 바인딩
 
 #### 91.	Cocomo model 중 기관 내부에서 개발된 중소규모의 소프트웨어로 일괄 자료 처리나 과학기술계산용, 비즈니스 자료 처리용으로 5만 라인이하의 소프트웨어를 개발하는 유형은?
 
