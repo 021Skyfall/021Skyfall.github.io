@@ -1,8 +1,8 @@
 ---
-title: "정보처리기사 / 22.03 필기 모의고사 오답노트"
+title: "정보처리기사 / 22.03 필기 모의고사 정리"
 author: Jeremiah Lee
 date: 2024-02-07
-categories: [ 정보처리기사, 필기 오답노트 ]
+categories: [ 정보처리기사, 필기 ]
 tags: [자격증]
 pin: false
 math: true
