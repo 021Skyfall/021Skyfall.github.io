@@ -1,5 +1,5 @@
 ---
-title: "프로젝트:샐로그 / 보안 1 - Oauth2 구현 과정"
+title: "프로젝트:샐로그 / 보안 1 - Oauth2 구현 과정 1"
 author: Jeremiah Lee
 date: 2024-03-06
 categories: [ 프로젝트, 샐로그, 보안 ]
