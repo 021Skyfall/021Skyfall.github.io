@@ -2,7 +2,7 @@
 title: "SSL/TLS 인증서의 개념"
 author: Jeremiah Lee
 date: 2024-03-22
-categories: [ 인증서, 개념 ]
+categories: [ TLS 인증서 ]
 tags: [인증서, 통신, 개념]
 pin: false
 math: true
