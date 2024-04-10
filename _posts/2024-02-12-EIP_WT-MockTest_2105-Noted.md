@@ -699,7 +699,7 @@ image:
 
 #### 96.	침입차단 시스템(방화벽) 중 다음과 같은 형태의 구축 유형은?
 
-![](/assets/img/Certificates/EIP/21-05-96.png)
+![](/assets/img/Certificates/EIP/WT/21-05-96.png)
 
      1.	Block Host
      2.	Tree Host

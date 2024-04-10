@@ -219,7 +219,7 @@ image:
 <br>
 
 #### 33. 다음은 인스펙션(Inspection) 과정을 표현한 것이다. (가)~(마)에 들어갈 말을 보기에서 찾아 바르게 연결한 것은?
-![](/assets/img/Certificates/EIP/22-04-33.png)
+![](/assets/img/Certificates/EIP/WT/22-04-33.png)
 
     1. (가) - ㉡, (나) - ㉢
     2. (나) - ㉠, (다) - ㉢
@@ -240,7 +240,7 @@ image:
 <br>
 
 #### 37. 아래 Tree 구조에 대하여 후위 순회(Postorder) 한 결과는?
-![](/assets/img/Certificates/EIP/22-04-37.png)
+![](/assets/img/Certificates/EIP/WT/22-04-37.png)
 
     1. a → b → d → c → e → g → h → f
     2. d → b → g → h → e → f → c → a
@@ -285,7 +285,7 @@ image:
 <br>
 
 #### 41. 다음 조건을 모두 만족하는 정규형은?
-![](/assets/img/Certificates/EIP/22-04-41.png)
+![](/assets/img/Certificates/EIP/WT/22-04-41.png)
 
     1. BCNF
     2. 제1정규형
@@ -419,7 +419,7 @@ image:
 <br>
 
 #### 62. 다음 C언어 프로그램이 실행되었을 때, 실행 결과는?
-![](/assets/img/Certificates/EIP/22-04-62.png)
+![](/assets/img/Certificates/EIP/WT/22-04-62.png)
 
     1. ０
     2. ２
@@ -436,7 +436,7 @@ image:
 <br>
 
 #### 63. 다음 C언어 프로그램이 실행되었을 때, 실행 결과는?
-![](/assets/img/Certificates/EIP/22-04-63.png)
+![](/assets/img/Certificates/EIP/WT/22-04-63.png)
 
     1. 30
     2. 60
@@ -479,7 +479,7 @@ ob2.a = 0, 4, 8, 12, 16
 <br>
 
 #### 65. 다음 Python 프로그램의 실행 결과가 [실행결과]와 같을 때, 빈칸에 적합한 것은?
-![](/assets/img/Certificates/EIP/22-04-65.png)
+![](/assets/img/Certificates/EIP/WT/22-04-65.png)
 
     1. either
     2. elif
@@ -495,7 +495,7 @@ ob2.a = 0, 4, 8, 12, 16
 <br>
 
 #### 67. 다음에서 설명하는 프로세스 스케줄링은?
-![](/assets/img/Certificates/EIP/22-04-67.png)
+![](/assets/img/Certificates/EIP/WT/22-04-67.png)
 
     1. FIFO 스케줄링
     2. RR 스케줄링
@@ -574,7 +574,7 @@ ob2.a = 0, 4, 8, 12, 16
 <br>
 
 #### 74. 다음 C언어 프로그램이 실행되었을 때, 실행 결과는?
-![](/assets/img/Certificates/EIP/22-04-74.png)
+![](/assets/img/Certificates/EIP/WT/22-04-74.png)
 
     1. 0
     2. 1
@@ -615,7 +615,7 @@ r3 = 거짓 && 참 = 0
 <br>
 
 #### 76. 4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, LRU 페이지 교체 알고리즘을 사용할 경우 몇 번의 페이지 결함이 발생하는가?
-![](/assets/img/Certificates/EIP/22-04-76.png)
+![](/assets/img/Certificates/EIP/WT/22-04-76.png)
 
     1. 5회
     2. 6회
@@ -670,7 +670,7 @@ r3 = 거짓 && 참 = 0
 <br>
 
 #### 79. a[0]의 주소값이 10일 경우 다음 C언어 프로그램이 실행되었을 때의 결과는? (단, int 형의 크기는 4Byte로 가정한다.)
-![](/assets/img/Certificates/EIP/22-04-79.png)
+![](/assets/img/Certificates/EIP/WT/22-04-79.png)
 
     1. 14, 10
     2. 14, 14
@@ -791,7 +791,7 @@ printf("%u", a);           a[0]자리의 첫번째 주소값   10
 <br>
 
 #### 87. 다음 내용이 설명하는 기술로 가장 적절한 것은?
-![](/assets/img/Certificates/EIP/22-04-87.png)
+![](/assets/img/Certificates/EIP/WT/22-04-87.png)
 
     1. Virtual Local Area Network
     2. Simple Station Network
@@ -807,7 +807,7 @@ printf("%u", a);           a[0]자리의 첫번째 주소값   10
 <br>
 
 #### 90. 다음 설명에 해당하는 공격기법은?
-![](/assets/img/Certificates/EIP/22-04-90.png)
+![](/assets/img/Certificates/EIP/WT/22-04-90.png)
 
     1. Ping of Death
     2. Session Hijacking
@@ -896,7 +896,7 @@ printf("%u", a);           a[0]자리의 첫번째 주소값   10
 <br>
 
 #### 98. 시스템의 사용자가 로그인하여 명령을 내리는 과정에 대한 시스템의 동작 중 다음 설명에 해당하는 것은?
-![](/assets/img/Certificates/EIP/22-04-90.png)
+![](/assets/img/Certificates/EIP/WT/22-04-90.png)
 
     1. Aging
     2. Accounting

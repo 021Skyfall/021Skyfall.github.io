@@ -151,7 +151,7 @@ image:
 
 #### 38.	다음 트리에 대한 중위 순회 운행 결과는?
 
-![](/assets/img/Certificates/EIP/21-08-38.png)
+![](/assets/img/Certificates/EIP/WT/21-08-38.png)
 
      1.	ABDCEF
      2.	ABCDEF
