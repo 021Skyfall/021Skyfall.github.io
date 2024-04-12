@@ -1,5 +1,5 @@
 ---
-title: "정보처리기사 실기 / iV - 데이터 입출력 구현"
+title: "정보처리기사 실기 / iV - 통합 구현"
 author: Jeremiah Lee
 date: 2024-04-12
 categories: [ 정보처리기사, 실기 ]
