@@ -1,5 +1,5 @@
 ---
-title: "정보처리기사 실기 / Vii - SQL 응용"
+title: "정보처리기사 실기 / Vii - SQL 응용 ☆☆"
 author: Jeremiah Lee
 date: 2024-04-13
 categories: [ 정보처리기사, 실기 ]
