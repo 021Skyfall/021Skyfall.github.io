@@ -2,7 +2,7 @@
 title: "프로젝트:샐로그 / 성능 테스트 - JMeter 사용법과 부하 테스트"
 author: Jeremiah Lee
 date: 2024-06-14
-categories: [ 프로젝트, 샐로그, 성능 테스트, JMeter ]
+categories: [ 프로젝트, 샐로그, 성능 테스트 ]
 tags: [프로젝트, 샐로그, 성능 테스트, JMeter]
 pin: false
 math: true
