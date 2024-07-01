@@ -150,7 +150,7 @@ scrape_configs:
 
 메트릭을 수집할 수 있도록 설정하기 위해 의존성 추가부터 살펴보자.
 
-```build.gradle
+```
 dependencies {
 ...
 	// 모니터링 (프로메테우스)
