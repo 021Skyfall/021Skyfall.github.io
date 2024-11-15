@@ -63,8 +63,8 @@ FROM 테이블명;
   - 이중 인용부호(큰 따옴표)는 ALIAS가 공백, 특수문자를 포함하는 경우나 대소문자 구분이 필요할 때 사용
 
 #### 합성 연산자 (합침)
-  - 수직바 || (Oracle)
-  - 플로스 + (SQL server)
+  - 수직바 \|| (Oracle)
+  - 플러스 + (SQL server)
   - CONCAT (string1, string2)
 
 ```

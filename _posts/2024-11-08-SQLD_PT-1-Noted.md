@@ -110,9 +110,11 @@ image:
 #### IE/Crow's Foot (까마귀발) 표기법
 
 ![](/assets/img/Certificates/SQLD/ie_crowfoot.png)
+
 출처 : https://ppomelo.tistory.com/51
 
 ![](/assets/img/Certificates/SQLD/crowfoot_ex.png)
+
 출처 : https://ppomelo.tistory.com/51
 
 - Entity는 네부분의 모서리가 둥근 형태인 Soft-Box로 표현
