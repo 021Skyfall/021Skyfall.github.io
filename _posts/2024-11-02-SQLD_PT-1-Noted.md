@@ -1,7 +1,7 @@
 ---
 title: "SQLD / 1 과목 - 데이터 모델링의 이해"
 author: Jeremiah Lee
-date: 2024-11-08
+date: 2024-11-02
 categories: [ SQLD ]
 tags: [자격증]
 pin: false

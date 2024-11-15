@@ -1,7 +1,7 @@
 ---
 title: "SQLD / 모의고사 정리 1"
 author: Jeremiah Lee
-date: 2024-11-15
+date: 2024-11-10
 categories: [ SQLD, 모의고사 ]
 tags: [자격증]
 pin: false
