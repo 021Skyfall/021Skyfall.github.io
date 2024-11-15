@@ -2,7 +2,7 @@
 title: "SQLD / 2 과목 - SQL 기본 및 활용"
 author: Jeremiah Lee
 date: 2024-11-05
-categories: [ SQLD ]
+categories: [ SQLD, 개념 ]
 tags: [자격증]
 pin: false
 math: true
