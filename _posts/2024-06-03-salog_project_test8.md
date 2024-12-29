@@ -384,7 +384,7 @@ Last updated 2024-06-14 14:32:58 +0900
 
 그 다음 gradlew test 명령을 실행하여 전체 테스트를 실행하면 되는데, 문서화를 위해 asciidoctor 옵션까지 적용하여 실행한다.
 
-간단히 터미널에서 gradlew 빌드 실행 파일이 있는 위치로 이동하여
+간단히 터미널에서 루트 디렉토리로 이동하여
 
 ```
 ./gradlew test asciidoctor   
