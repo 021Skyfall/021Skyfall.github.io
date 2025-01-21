@@ -27,7 +27,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -49,12 +48,11 @@ jobs:
           rbenv global 3.2.0
           ruby -v # Ruby 버전 확인
       - name: Install Bundler
-        run: gem install bundler --user-install
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
+        run: |
+          gem install bundler --user-install
+          echo 'export PATH="$HOME/.gem/ruby/3.2.0/bin:$PATH"' >> ~/.bashrc
+          source ~/.bashrc
       - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
         run: |
           BASE_URL="/${{ github.repository }}" # GitHub 리포지토리 이름을 baseurl로 설정
           bundle exec jekyll build --baseurl "$BASE_URL"
