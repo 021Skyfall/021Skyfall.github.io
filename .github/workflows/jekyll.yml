@@ -33,13 +33,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install Ruby
+      - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y ruby-full
+          sudo apt-get install -y curl
+          curl -L https://github.com/rbenv/rbenv/archive/refs/tags/v1.2.0.tar.gz | tar xz
+          curl -L https://github.com/rbenv/ruby-build/archive/refs/tags/v20230130.tar.gz | tar xz
+          export PATH="$HOME/.rbenv/bin:$PATH"
+          eval "$(rbenv init -)"
+          rbenv install 3.2.0
+          rbenv global 3.2.0
           ruby -v # Ruby 버전 확인
       - name: Install Bundler
-        run: gem install bundler
+        run: gem install bundler --user-install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
