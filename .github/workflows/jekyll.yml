@@ -30,28 +30,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
       - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y curl git
-          # Install rbenv
-          git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-          echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-          echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-          exec $SHELL
-          # Install ruby-build as an rbenv plugin
-          git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-          # Install Ruby
-          rbenv install 3.2.0
-          rbenv global 3.2.0
-          ruby -v # Ruby 버전 확인
-      - name: Install Bundler
-        run: |
-          gem install bundler --user-install
-          echo 'export PATH="$HOME/.gem/ruby/3.2.0/bin:$PATH"' >> ~/.bashrc
-          source ~/.bashrc
+          gem install bundler
+          bundle install
+
       - name: Build with Jekyll
         run: |
           BASE_URL="/${{ github.repository }}" # GitHub 리포지토리 이름을 baseurl로 설정
