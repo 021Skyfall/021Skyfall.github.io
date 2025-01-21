@@ -36,11 +36,15 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y curl
-          curl -L https://github.com/rbenv/rbenv/archive/refs/tags/v1.2.0.tar.gz | tar xz
-          curl -L https://github.com/rbenv/ruby-build/archive/refs/tags/v20230130.tar.gz | tar xz
-          export PATH="$HOME/.rbenv/bin:$PATH"
-          eval "$(rbenv init -)"
+          sudo apt-get install -y curl git
+          # Install rbenv
+          git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+          echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+          echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+          exec $SHELL
+          # Install ruby-build as an rbenv plugin
+          git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+          # Install Ruby
           rbenv install 3.2.0
           rbenv global 3.2.0
           ruby -v # Ruby 버전 확인
